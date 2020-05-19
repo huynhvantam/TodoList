@@ -1,0 +1,8 @@
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.DAL\bin\Debug\netstandard2.0\TodoList.DAL.deps.json
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.DAL\bin\Debug\netstandard2.0\TodoList.DAL.dll
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.DAL\obj\Debug\netstandard2.0\TodoList.DAL.csprojAssemblyReference.cache
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.DAL\obj\Debug\netstandard2.0\TodoList.DAL.AssemblyInfoInputs.cache
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.DAL\obj\Debug\netstandard2.0\TodoList.DAL.AssemblyInfo.cs
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.DAL\bin\Debug\netstandard2.0\TodoList.DAL.Interface.dll
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.DAL\bin\Debug\netstandard2.0\TodoList.Domain.dll
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.DAL\obj\Debug\netstandard2.0\TodoList.DAL.csproj.CoreCompileInputs.cache

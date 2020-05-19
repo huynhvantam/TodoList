@@ -1,0 +1,9 @@
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.BLL\bin\Debug\netstandard2.0\TodoList.BLL.deps.json
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.BLL\bin\Debug\netstandard2.0\TodoList.BLL.dll
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.BLL\bin\Debug\netstandard2.0\TodoList.BLL.pdb
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.BLL\obj\Debug\netstandard2.0\TodoList.BLL.csprojAssemblyReference.cache
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.BLL\obj\Debug\netstandard2.0\TodoList.BLL.csproj.CoreCompileInputs.cache
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.BLL\obj\Debug\netstandard2.0\TodoList.BLL.AssemblyInfoInputs.cache
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.BLL\obj\Debug\netstandard2.0\TodoList.BLL.AssemblyInfo.cs
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.BLL\obj\Debug\netstandard2.0\TodoList.BLL.dll
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.BLL\obj\Debug\netstandard2.0\TodoList.BLL.pdb

@@ -1,0 +1,8 @@
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.Domain\bin\Debug\netstandard2.0\TodoList.Domain.deps.json
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.Domain\bin\Debug\netstandard2.0\TodoList.Domain.dll
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.Domain\bin\Debug\netstandard2.0\TodoList.Domain.pdb
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.Domain\obj\Debug\netstandard2.0\TodoList.Domain.csproj.CoreCompileInputs.cache
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.Domain\obj\Debug\netstandard2.0\TodoList.Domain.AssemblyInfoInputs.cache
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.Domain\obj\Debug\netstandard2.0\TodoList.Domain.AssemblyInfo.cs
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.Domain\obj\Debug\netstandard2.0\TodoList.Domain.dll
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.Domain\obj\Debug\netstandard2.0\TodoList.Domain.pdb

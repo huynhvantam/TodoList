@@ -16,29 +16,29 @@ namespace TodoList.BLL
             _userRepository = userRepository;
         }
 
-        public int CreateUser(ReqCreateUser request)
+        public int CreateUserSV(ReqCreateUser request)
         {
-            return _userRepository.CreateUser(request);
+            return _userRepository.CreateUserRP(request);
         }
 
-        public bool DeleteUser(int Id)
+        public bool DeleteUserSV(int Id)
         {
-            return _userRepository.DeleteUser(Id);
+            return _userRepository.DeleteUserRP(Id);
         }
 
-        public int EditUser(ReqEditUser request)
+        public int EditUserSV(ReqEditUser request)
         {
-            return _userRepository.EditUser(request);
+            return _userRepository.EditUserRP(request);
         }
 
-        public IList<ResUser> GetListUser()
+        public IList<ResUser> GetListUserSV()
         {
-            return _userRepository.GetListUser();
+            return _userRepository.GetListUserRP();
         }
 
-        public ResUser GetUserById(int Id)
+        public ResUser GetUserByIdSV(int Id)
         {
-            return _userRepository.GetUserById(Id);
+            return _userRepository.GetUserByIdRP(Id);
         }
     }
 }

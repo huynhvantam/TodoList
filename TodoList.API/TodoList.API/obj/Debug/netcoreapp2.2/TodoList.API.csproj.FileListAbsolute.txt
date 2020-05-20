@@ -7,7 +7,6 @@ C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.API\bin\Debug\netc
 C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.API\bin\Debug\netcoreapp2.2\TodoList.API.dll
 C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.API\bin\Debug\netcoreapp2.2\TodoList.API.pdb
 C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.API\obj\Debug\netcoreapp2.2\TodoList.API.csprojAssemblyReference.cache
-C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.API\obj\Debug\netcoreapp2.2\TodoList.API.csproj.CoreCompileInputs.cache
 C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.API\obj\Debug\netcoreapp2.2\TodoList.API.RazorAssemblyInfo.cache
 C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.API\obj\Debug\netcoreapp2.2\TodoList.API.RazorAssemblyInfo.cs
 C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.API\obj\Debug\netcoreapp2.2\TodoList.API.AssemblyInfoInputs.cache
@@ -16,3 +15,15 @@ C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.API\obj\Debug\netc
 C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.API\obj\Debug\netcoreapp2.2\TodoList.API.dll
 C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.API\obj\Debug\netcoreapp2.2\TodoList.API.pdb
 C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.API\obj\Debug\netcoreapp2.2\TodoList.API.genruntimeconfig.cache
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.API\obj\Debug\netcoreapp2.2\TodoList.API.csproj.CoreCompileInputs.cache
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.API\bin\Debug\netcoreapp2.2\TodoList.BLL.dll
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.API\bin\Debug\netcoreapp2.2\TodoList.BLL.Interface.dll
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.API\bin\Debug\netcoreapp2.2\TodoList.DAL.dll
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.API\bin\Debug\netcoreapp2.2\TodoList.DAL.Interface.dll
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.API\bin\Debug\netcoreapp2.2\TodoList.Domain.dll
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.API\bin\Debug\netcoreapp2.2\TodoList.BLL.Interface.pdb
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.API\bin\Debug\netcoreapp2.2\TodoList.BLL.pdb
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.API\bin\Debug\netcoreapp2.2\TodoList.DAL.Interface.pdb
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.API\bin\Debug\netcoreapp2.2\TodoList.DAL.pdb
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.API\bin\Debug\netcoreapp2.2\TodoList.Domain.pdb
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.API\obj\Debug\netcoreapp2.2\TodoList.API.csproj.CopyComplete

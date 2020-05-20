@@ -2,3 +2,11 @@ C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.DAL.Interface\obj\
 C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.DAL.Interface\obj\Debug\netstandard2.0\TodoList.DAL.Interface.csproj.CoreCompileInputs.cache
 C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.DAL.Interface\obj\Debug\netstandard2.0\TodoList.DAL.Interface.AssemblyInfoInputs.cache
 C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.DAL.Interface\obj\Debug\netstandard2.0\TodoList.DAL.Interface.AssemblyInfo.cs
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.DAL.Interface\bin\Debug\netstandard2.0\TodoList.DAL.Interface.deps.json
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.DAL.Interface\bin\Debug\netstandard2.0\TodoList.DAL.Interface.dll
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.DAL.Interface\bin\Debug\netstandard2.0\TodoList.DAL.Interface.pdb
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.DAL.Interface\bin\Debug\netstandard2.0\TodoList.Domain.dll
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.DAL.Interface\bin\Debug\netstandard2.0\TodoList.Domain.pdb
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.DAL.Interface\obj\Debug\netstandard2.0\TodoList.DAL.Interface.csproj.CopyComplete
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.DAL.Interface\obj\Debug\netstandard2.0\TodoList.DAL.Interface.dll
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.DAL.Interface\obj\Debug\netstandard2.0\TodoList.DAL.Interface.pdb

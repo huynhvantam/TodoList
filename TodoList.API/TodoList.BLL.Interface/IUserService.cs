@@ -8,10 +8,10 @@ namespace TodoList.BLL.Interface
 {
     public interface IUserService
     {
-        IList<ResUser> GetListUser();
-        ResUser GetUserById(int Id);
-        int CreateUser(ReqCreateUser request);
-        int EditUser(ReqEditUser request);
-        bool DeleteUser(int Id);
+        IList<ResUser> GetListUserSV();
+        ResUser GetUserByIdSV(int Id);
+        int CreateUserSV(ReqCreateUser request);
+        int EditUserSV(ReqEditUser request);
+        bool DeleteUserSV(int Id);
     }
 }

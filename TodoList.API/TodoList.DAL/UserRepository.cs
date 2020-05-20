@@ -12,7 +12,7 @@ namespace TodoList.DAL
 {
     public class UserRepository : BaseRepository, IUserRepository
     {
-        public int CreateUser(ReqCreateUser request)
+        public int CreateUserRP(ReqCreateUser request)
         {
             try
             {
@@ -29,7 +29,7 @@ namespace TodoList.DAL
             }
         }
 
-        public bool DeleteUser(int Id)
+        public bool DeleteUserRP(int Id)
         {
             try
             {
@@ -45,7 +45,7 @@ namespace TodoList.DAL
             }
         }
 
-        public int EditUser(ReqEditUser request)
+        public int EditUserRP(ReqEditUser request)
         {
             try
             {
@@ -63,13 +63,13 @@ namespace TodoList.DAL
             }
         }
 
-        public IList<ResUser> GetListUser()
+        public IList<ResUser> GetListUserRP()
         {
             IList<ResUser> getListUser = SqlMapper.Query<ResUser>(con, "GetListUser", commandType: CommandType.StoredProcedure).ToList();
             return getListUser;
         }
 
-        public ResUser GetUserById(int Id)
+        public ResUser GetUserByIdRP(int Id)
         {
             DynamicParameters parameters = new DynamicParameters();
             parameters.Add("@Id", Id);

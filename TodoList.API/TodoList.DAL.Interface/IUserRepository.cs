@@ -8,10 +8,10 @@ namespace TodoList.DAL.Interface
 {
     public interface IUserRepository
     {
-        IList<ResUser> GetListUser();
-        ResUser GetUserById(int Id);
-        int CreateUser(ReqCreateUser request);
-        int EditUser(ReqEditUser request);
-        bool DeleteUser(int Id);
+        IList<ResUser> GetListUserRP();
+        ResUser GetUserByIdRP(int Id);
+        int CreateUserRP(ReqCreateUser request);
+        int EditUserRP(ReqEditUser request);
+        bool DeleteUserRP(int Id);
     }
 }

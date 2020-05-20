@@ -8,6 +8,15 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TodoList.BLL.Interface\TodoList.BLL.Interface.csproj" />
+    <ProjectReference Include="..\TodoList.BLL\TodoList.BLL.csproj" />
+    <ProjectReference Include="..\TodoList.DAL.Interface\TodoList.DAL.Interface.csproj" />
+    <ProjectReference Include="..\TodoList.DAL\TodoList.DAL.csproj" />
+    <ProjectReference Include="..\TodoList.Domain\TodoList.Domain.csproj" />
   </ItemGroup>
 
 </Project>

@@ -7,3 +7,6 @@ C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.BLL.Interface\obj\
 C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.BLL.Interface\obj\Debug\netstandard2.0\TodoList.BLL.Interface.AssemblyInfo.cs
 C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.BLL.Interface\obj\Debug\netstandard2.0\TodoList.BLL.Interface.dll
 C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.BLL.Interface\obj\Debug\netstandard2.0\TodoList.BLL.Interface.pdb
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.BLL.Interface\bin\Debug\netstandard2.0\TodoList.Domain.dll
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.BLL.Interface\bin\Debug\netstandard2.0\TodoList.Domain.pdb
+C:\Users\tamhv\Desktop\project\TodoList\TodoList.API\TodoList.BLL.Interface\obj\Debug\netstandard2.0\TodoList.BLL.Interface.csproj.CopyComplete

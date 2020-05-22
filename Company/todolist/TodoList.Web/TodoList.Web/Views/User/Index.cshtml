@@ -1,0 +1,55 @@
+﻿@model IEnumerable<TodoList.Web.Models.UserM.UserViewM>
+
+@{
+    ViewData["Title"] = "V>U>Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>List User</h1>
+
+<p>
+    <a class="btn btn-outline-primary " asp-controller="User" asp-action="CreateUser">Create New</a>
+</p>
+<table class="table table-striped table-bordered table-hover">
+    <thead class="thead-dark">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Username)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Password)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AllTask)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Username)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Password)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AllTask)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "EditUser", "User", new { id = item.ID }, new { @class = "btn btn-outline-success" })
+                    @Html.ActionLink("Details", "Index", "TodoList", new { id = item.ID }, new { @class = "btn btn-outline-info" })
+                    @Html.ActionLink("Delete", "DeleteUser", "User", new { id = item.ID }, new { @class = "btn btn-outline-danger", onclick = "return confirm('Bạn có muốn xóa User này?')" })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,62 @@
+﻿@model IEnumerable<TodoList.Web.Models.TodoListM.TodoListViewM>
+
+@{
+    ViewData["Title"] = "To-do List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>To-do List - Account: @ViewBag.Username</h1>
+
+<p>
+    <a class="btn btn-outline-info" asp-controller="User" asp-action="Index">List User</a>
+    <a class="btn btn-outline-primary" asp-controller="TodoList" asp-action="CreateTodoList">Create New</a>
+</p>
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TaskName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TaskLevel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TaskGroup)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserID)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TaskName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TaskLevel)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TaskGroup)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserID)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "EditTodoList", "TodoList", new { /* id=item.PrimaryKey */ }, new { @class = "btn btn-outline-success" })
+
+                    @Html.ActionLink("Delete", "DeleteTodoList", "TodoList", new { /* id=item.PrimaryKey */ }, new { @class = "btn btn-outline-danger", onclick = "return confirm('Bạn có muốn xóa To-to List này?')" })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

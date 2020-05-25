@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LvuXDbQmgOxE4JSV4wLxofn+RKK0wznSsSKF0a9DCHkucDWxmmqoOXd0YguZxm5Jka3lcyTH5V8lO8j2U2y61A==",
+  "dgSpecHash": "IoTG9JuxXEQlF3OcTBjfTqsh+mY7Y/tldmwqzS+gayHHfC3Bc09pT4p061uTqrW80kMacCvblWILxzyK/f4zVw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tamhv\\Desktop\\project\\TodoList\\TodoList.API\\TodoList.BLL.Interface\\TodoList.BLL.Interface.csproj",
+  "projectFilePath": "C:\\Users\\tamhv\\Desktop\\project\\Company\\todolist\\TodoList.API\\TodoList.BLL.Interface\\TodoList.BLL.Interface.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"

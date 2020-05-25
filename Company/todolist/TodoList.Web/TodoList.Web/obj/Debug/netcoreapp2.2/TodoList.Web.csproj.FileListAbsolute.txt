@@ -37,3 +37,4 @@ C:\Users\tamhv\Desktop\project\Company\todolist\TodoList.Web\TodoList.Web\obj\De
 C:\Users\tamhv\Desktop\project\Company\todolist\TodoList.Web\TodoList.Web\obj\Debug\netcoreapp2.2\Razor\Views\User\EditUser.cshtml.g.cs
 C:\Users\tamhv\Desktop\project\Company\todolist\TodoList.Web\TodoList.Web\obj\Debug\netcoreapp2.2\Razor\Views\TodoList\Index.cshtml.g.cs
 C:\Users\tamhv\Desktop\project\Company\todolist\TodoList.Web\TodoList.Web\obj\Debug\netcoreapp2.2\Razor\Views\TodoList\CreateTodoList.cshtml.g.cs
+C:\Users\tamhv\Desktop\project\Company\todolist\TodoList.Web\TodoList.Web\obj\Debug\netcoreapp2.2\Razor\Views\TodoList\EditTodoList.cshtml.g.cs

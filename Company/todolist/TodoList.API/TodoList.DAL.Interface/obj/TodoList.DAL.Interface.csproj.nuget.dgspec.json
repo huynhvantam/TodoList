@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tamhv\\Desktop\\project\\TodoList\\TodoList.API\\TodoList.DAL.Interface\\TodoList.DAL.Interface.csproj": {}
+    "C:\\Users\\tamhv\\Desktop\\project\\Company\\todolist\\TodoList.API\\TodoList.DAL.Interface\\TodoList.DAL.Interface.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tamhv\\Desktop\\project\\TodoList\\TodoList.API\\TodoList.DAL.Interface\\TodoList.DAL.Interface.csproj": {
+    "C:\\Users\\tamhv\\Desktop\\project\\Company\\todolist\\TodoList.API\\TodoList.DAL.Interface\\TodoList.DAL.Interface.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tamhv\\Desktop\\project\\TodoList\\TodoList.API\\TodoList.DAL.Interface\\TodoList.DAL.Interface.csproj",
+        "projectUniqueName": "C:\\Users\\tamhv\\Desktop\\project\\Company\\todolist\\TodoList.API\\TodoList.DAL.Interface\\TodoList.DAL.Interface.csproj",
         "projectName": "TodoList.DAL.Interface",
-        "projectPath": "C:\\Users\\tamhv\\Desktop\\project\\TodoList\\TodoList.API\\TodoList.DAL.Interface\\TodoList.DAL.Interface.csproj",
+        "projectPath": "C:\\Users\\tamhv\\Desktop\\project\\Company\\todolist\\TodoList.API\\TodoList.DAL.Interface\\TodoList.DAL.Interface.csproj",
         "packagesPath": "C:\\Users\\tamhv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tamhv\\Desktop\\project\\TodoList\\TodoList.API\\TodoList.DAL.Interface\\obj\\",
+        "outputPath": "C:\\Users\\tamhv\\Desktop\\project\\Company\\todolist\\TodoList.API\\TodoList.DAL.Interface\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,8 +30,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\tamhv\\Desktop\\project\\TodoList\\TodoList.API\\TodoList.Domain\\TodoList.Domain.csproj": {
-                "projectPath": "C:\\Users\\tamhv\\Desktop\\project\\TodoList\\TodoList.API\\TodoList.Domain\\TodoList.Domain.csproj"
+              "C:\\Users\\tamhv\\Desktop\\project\\Company\\todolist\\TodoList.API\\TodoList.Domain\\TodoList.Domain.csproj": {
+                "projectPath": "C:\\Users\\tamhv\\Desktop\\project\\Company\\todolist\\TodoList.API\\TodoList.Domain\\TodoList.Domain.csproj"
               }
             }
           }
@@ -66,14 +66,14 @@
         }
       }
     },
-    "C:\\Users\\tamhv\\Desktop\\project\\TodoList\\TodoList.API\\TodoList.Domain\\TodoList.Domain.csproj": {
+    "C:\\Users\\tamhv\\Desktop\\project\\Company\\todolist\\TodoList.API\\TodoList.Domain\\TodoList.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tamhv\\Desktop\\project\\TodoList\\TodoList.API\\TodoList.Domain\\TodoList.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\tamhv\\Desktop\\project\\Company\\todolist\\TodoList.API\\TodoList.Domain\\TodoList.Domain.csproj",
         "projectName": "TodoList.Domain",
-        "projectPath": "C:\\Users\\tamhv\\Desktop\\project\\TodoList\\TodoList.API\\TodoList.Domain\\TodoList.Domain.csproj",
+        "projectPath": "C:\\Users\\tamhv\\Desktop\\project\\Company\\todolist\\TodoList.API\\TodoList.Domain\\TodoList.Domain.csproj",
         "packagesPath": "C:\\Users\\tamhv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tamhv\\Desktop\\project\\TodoList\\TodoList.API\\TodoList.Domain\\obj\\",
+        "outputPath": "C:\\Users\\tamhv\\Desktop\\project\\Company\\todolist\\TodoList.API\\TodoList.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

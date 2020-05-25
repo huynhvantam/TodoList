@@ -186,36 +186,36 @@ namespace TodoList.Web.Controllers
             }
 
         }
-        //public IActionResult XoaNhanVien(int id)
-        //{
-        //    var ketQua = false;
-        //    var url = $"{Common.Common.ApiUrl}/nhanvien/xoanhanvien/{id}";
-        //    HttpWebRequest httpWebRequest = (HttpWebRequest)WebRequest.Create(url);
-        //    httpWebRequest.Method = "DELETE";
-        //    var response = httpWebRequest.GetResponse();
-        //    {
-        //        string responseData;
-        //        Stream responseStream = response.GetResponseStream();
-        //        try
-        //        {
-        //            StreamReader streamReader = new StreamReader(responseStream);
-        //            try
-        //            {
-        //                responseData = streamReader.ReadToEnd();
-        //            }
-        //            finally
-        //            {
-        //                ((IDisposable)streamReader).Dispose();
-        //            }
-        //        }
-        //        finally
-        //        {
-        //            ((IDisposable)responseStream).Dispose();
-        //        }
-        //        ketQua = JsonConvert.DeserializeObject<bool>(responseData);
-        //    }
-        //    return RedirectToAction("Index", "NhanVien", new { id = phongBanId });
+        public IActionResult DeleteTodoList(int id)
+        {
+            var result = false;
+            var url = $"{Common.Common.ApiUrl}/todolist/deletetodolist/{id}";
+            HttpWebRequest httpWebRequest = (HttpWebRequest)WebRequest.Create(url);
+            httpWebRequest.Method = "DELETE";
+            var response = httpWebRequest.GetResponse();
+            {
+                string responseData;
+                Stream responseStream = response.GetResponseStream();
+                try
+                {
+                    StreamReader streamReader = new StreamReader(responseStream);
+                    try
+                    {
+                        responseData = streamReader.ReadToEnd();
+                    }
+                    finally
+                    {
+                        ((IDisposable)streamReader).Dispose();
+                    }
+                }
+                finally
+                {
+                    ((IDisposable)responseStream).Dispose();
+                }
+                result = JsonConvert.DeserializeObject<bool>(responseData);
+            }
+            return RedirectToAction("Index", "TodoList", new { id = userIdC });
 
-        //}
+        }
     }
 }

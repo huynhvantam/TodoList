@@ -1,0 +1,72 @@
+﻿@model TodoList.Web.Models.TodoListM.EditTodoListM
+
+@{
+    ViewData["Title"] = "CreateTodoList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var usersV = new List<TodoList.Web.Models.TodoListM.UserItem>();
+    usersV = ViewBag.VGusers;
+    int useridV = ViewBag.VGuserid;
+}
+
+<h1>Edit Tast</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-12">
+        <form asp-action="EditTodoList">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            @if (TempData["Done"] != null)
+            {
+                <p class="alert alert-success"> @TempData["Done"]</p>
+            } @if (TempData["Fail"] != null)
+            {
+                <p class="alert alert-success"> @TempData["Fail"]</p>
+            }
+            <div class="row">
+                <div class="col-md-6">
+
+                    <div class="form-group">
+                        <label asp-for="TaskName" class="control-label"></label>
+                        <input asp-for="TaskName" class="form-control" />
+                        <span asp-validation-for="TaskName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="UserID" class="control-label"></label>
+                        <select asp-for="UserID" class="form-control">
+                            @foreach (var item in usersV)
+                            {
+                                <option value="@item.ID" selected="@(item.ID ==Model.UserID)">@item.Username</option>
+                            }
+                        </select>
+                        <span asp-validation-for="UserID" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="TaskLevel" class="control-label"></label>
+                        <input asp-for="TaskLevel" class="form-control" />
+                        <span asp-validation-for="TaskLevel" class="text-danger"></span>
+                        <div class="form-group">
+                            <label asp-for="TaskGroup" class="control-label"></label>
+                            <input asp-for="TaskGroup" class="form-control" />
+                            <span asp-validation-for="TaskGroup" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a class="btn btn-outline-info" asp-controller="TodoList" asp-action="Index" asp-route-id="@useridV">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

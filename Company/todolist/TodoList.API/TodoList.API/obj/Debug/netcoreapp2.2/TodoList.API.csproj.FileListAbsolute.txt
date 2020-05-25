@@ -52,3 +52,7 @@ C:\Users\tamhv\Desktop\project\Company\todolist\TodoList.API\TodoList.API\obj\De
 C:\Users\tamhv\Desktop\project\Company\todolist\TodoList.API\TodoList.API\obj\Debug\netcoreapp2.2\TodoList.API.csproj.CopyComplete
 C:\Users\tamhv\Desktop\project\Company\todolist\TodoList.API\TodoList.API\obj\Debug\netcoreapp2.2\TodoList.API.dll
 C:\Users\tamhv\Desktop\project\Company\todolist\TodoList.API\TodoList.API\obj\Debug\netcoreapp2.2\TodoList.API.pdb
+C:\Users\tamhv\Desktop\project\Company\todolist\TodoList.API\TodoList.API\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\tamhv\Desktop\project\Company\todolist\TodoList.API\TodoList.API\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\tamhv\Desktop\project\Company\todolist\TodoList.API\TodoList.API\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\tamhv\Desktop\project\Company\todolist\TodoList.API\TodoList.API\obj\Debug\netcoreapp2.2\TodoList.API.genruntimeconfig.cache

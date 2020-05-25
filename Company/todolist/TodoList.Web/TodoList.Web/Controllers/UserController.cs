@@ -85,28 +85,28 @@ namespace TodoList.Web.Controllers
             HttpWebRequest httpWebRequest = (HttpWebRequest)WebRequest.Create(url);
             httpWebRequest.Method = "GET";
             var response = httpWebRequest.GetResponse();
+
+            string responseData;
+            Stream responseStream = response.GetResponseStream();
+            try
             {
-                string responseData;
-                Stream responseStream = response.GetResponseStream();
+                StreamReader streamReader = new StreamReader(responseStream);
                 try
                 {
-                    StreamReader streamReader = new StreamReader(responseStream);
-                    try
-                    {
-                        responseData = streamReader.ReadToEnd();
-                    }
-                    finally
-                    {
-                        ((IDisposable)streamReader).Dispose();
-                    }
+                    responseData = streamReader.ReadToEnd();
                 }
                 finally
                 {
-
-                    ((IDisposable)responseStream).Dispose();
+                    ((IDisposable)streamReader).Dispose();
                 }
-                user = JsonConvert.DeserializeObject<EditUserM>(responseData);
             }
+            finally
+            {
+
+                ((IDisposable)responseStream).Dispose();
+            }
+            user = JsonConvert.DeserializeObject<EditUserM>(responseData);
+
             TempData["Done"] = null;
             TempData["Fail"] = null;
             return View(user);

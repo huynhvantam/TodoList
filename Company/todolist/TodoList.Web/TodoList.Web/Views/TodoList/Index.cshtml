@@ -52,9 +52,9 @@
                     @Html.DisplayFor(modelItem => item.UserID)
                 </td>
                 <td>
-                    @Html.ActionLink("Edit", "EditTodoList", "TodoList", new { /* id=item.PrimaryKey */ }, new { @class = "btn btn-outline-success" })
+                    @Html.ActionLink("Edit", "EditTodoList", "TodoList", new { id = item.ID }, new { @class = "btn btn-outline-success" })
 
-                    @Html.ActionLink("Delete", "DeleteTodoList", "TodoList", new { /* id=item.PrimaryKey */ }, new { @class = "btn btn-outline-danger", onclick = "return confirm('Bạn có muốn xóa To-to List này?')" })
+                    @Html.ActionLink("Delete", "DeleteTodoList", "TodoList", new { id = item.ID }, new { @class = "btn btn-outline-danger", onclick = "return confirm('Bạn có muốn xóa To-to List này?')" })
                 </td>
             </tr>
         }

@@ -1,0 +1,128 @@
+[HttpPost]
+        [Route("ExportExcelStatistical")]
+        public async Task<IActionResult> ExportExcel([FromBody] GetStatisticalWithParamQuery command)
+        {
+            Byte[] theData = null;
+        if (command.MemberId == 0)
+        {
+            List<StatisticalDto> data = new List<StatisticalDto>();
+            bool check = false;
+
+            if (command.FromDate == null && command.ToDate == null)
+            {
+                data = await Mediator.Send(new GetAllStatisticalsQuery());
+            }
+            else
+            {
+                data = await Mediator.Send(command);
+                check = true;
+            }
+
+
+            var countRow = data.Count();
+            var countCol = 11;
+            var sizeTittle = 12;
+            var firstRow = 4;
+            var firstCol = 3;
+
+
+            ExcelPackage.LicenseContext = LicenseContext.Commercial;
+
+            ExcelPackage excel = new ExcelPackage();
+
+            //var theSpeadsheet = "";
+            //using(MemoryStream memStream = new MemoryStream(theSpeadsheet))
+            //{
+            //    ExcelPackage excel = new ExcelPackage();
+            //}
+
+
+            var workSheet = excel.Workbook.Worksheets.Add("list_statistical");
+
+
+            workSheet.Cells[firstRow, firstCol].LoadFromCollection(data, true, TableStyles.Light19);
+
+            var rowEnd = workSheet.Dimension.End.Row;
+            var colEnd = workSheet.Dimension.End.Column;
+
+            workSheet.DeleteColumn(14, 15);
+            //workSheet.DeleteColumn(9);
+            //workSheet.DeleteColumn(9);
+            workSheet.Cells[firstRow, firstCol].Value = "NO.";
+            workSheet.Cells[firstRow, firstCol].Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
+            workSheet.Cells[firstRow + 1, firstCol, rowEnd, colEnd].Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
+
+            for (int i = firstRow + 1; i < countRow + (firstRow + 1); i++)
+            {
+                workSheet.Cells["C" + i].Value = (i - firstRow);
+                workSheet.Cells["C" + i].Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
+            }
+
+            using (ExcelRange headings = workSheet.Cells[firstRow, firstCol, firstRow, colEnd - 2])
+            {
+                headings.Style.Font.Bold = true;
+                //headings.Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
+                var fill = headings.Style.Fill;
+                headings.Style.Font.Size = 14;
+                fill.PatternType = ExcelFillStyle.Solid;
+                fill.BackgroundColor.SetColor(Color.LightBlue);
+
+            }
+
+            //using (ExcelRange headings = workSheet.Cells[4, 5, rowEnd, colEnd])
+            //{
+            //    //headings.Style.Font.Bold = true;
+            //    headings.Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
+
+            //}
+
+
+
+            workSheet.Cells.AutoFitColumns();
+
+            //workSheet.Column(7).Width = 10;
+
+
+            if (check)
+            {
+                workSheet.Cells[firstRow - 2, firstCol].Value = $"List Statistical Member From {command.FromDate} To {command.ToDate} Count:({countRow})";
+            }
+            else
+            {
+                workSheet.Cells[firstRow - 2, firstCol].Value = $"List All Statistical Member Count:({countRow})";
+            }
+
+
+            using (ExcelRange Rng = workSheet.Cells[firstRow - 2, firstCol, firstRow - 2, colEnd - 2])
+            {
+                Rng.Merge = true;
+                Rng.Style.Font.Bold = true;
+                Rng.Style.Font.Size = 18;
+                Rng.Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
+            }
+
+
+            DateTime utcDate = DateTime.Now;
+            //TimeZoneInfo esTimeZone = TimeZoneInfo.FindSystemTimeZoneById("Eastern Standard Time");
+            //DateTime localDate = TimeZoneInfo.ConvertTimeFromUtc(utcDate, esTimeZone);
+
+            using (ExcelRange Rng = workSheet.Cells[firstRow - 1, colEnd - 2])
+            {
+                Rng.Value = "Create: " + utcDate.ToString("HH:mm:ss") + " on " +
+                    utcDate.ToString("yyyy-MM-dd");
+                Rng.Style.Font.Bold = true;
+                Rng.Style.Font.Size = 12;
+                Rng.Style.HorizontalAlignment = ExcelHorizontalAlignment.Right;
+            }
+
+            theData = excel.GetAsByteArray();
+
+        }
+
+        string fileName = "list_statisticals";
+        string mimeType = "application/vnd.openxmlformats-" +
+            "officedocument.spreadsheetml.sheet";
+        return File(theData, mimeType, fileName);
+
+
+    }

@@ -1,0 +1,50 @@
+ public class ReportController : ControllerBase
+    {
+
+        [Obsolete]
+        private readonly IHostingEnvironment hostingEnvironment;
+        private readonly IGroupService _group;
+
+        [Obsolete]
+        public ReportController(IHostingEnvironment hostingEnvironment, IGroupService _group)
+        {
+            this.hostingEnvironment = hostingEnvironment;
+            this._group = _group;
+        }
+        [HttpGet]
+        [Route("api/export")]
+        public async Task<string> ExportReport()
+        {
+            string rootFolder = hostingEnvironment.WebRootPath;
+            string fileName = "JobList.xlsx";
+            string downloadUrl = string.Format("{0}://{1}/{2}", Request.Scheme, Request.Host, fileName);
+            FileInfo file = new FileInfo(Path.Combine(rootFolder, fileName));
+            if (file.Exists)
+            {
+                file.Delete();
+                file = new FileInfo(Path.Combine(rootFolder, fileName));
+            }
+            await Task.Yield();
+
+            using (ExcelPackage package = new ExcelPackage(file))
+            {
+                ExcelWorksheet worksheet2 = package.Workbook.Worksheets.Add("GroupList");
+                var GroupReport = _group.GetListGroupSV();
+                worksheet2.Cells[3, 5].LoadFromCollection(GroupReport, true, TableStyles.Light19);
+                worksheet2.DeleteColumn(2);
+                worksheet2.DeleteColumn(11);
+                worksheet2.DefaultColWidth = 25;
+                worksheet2.Cells.Style.WrapText = true;
+                worksheet2.Cells[1, 5].Value = $"Job List :({GroupReport.Count})";
+                using (ExcelRange Rng = worksheet2.Cells[1, 5, 1, 7])
+                {
+                    Rng.Merge = true;
+                    Rng.Style.Font.Bold = true;
+                    Rng.Style.Font.Size = 18;
+                    Rng.Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
+                }
+                return downloadUrl;
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+   [HttpGet]
+    [Route("api/export/JobList")]
+    public async Task<string> ExportReportJobList()
+    {
+        string rootFolder = hostingEnvironment.WebRootPath;
+        string fileName = "JobList.xlsx";
+        string downloadUrl = string.Format("{0}://{1}/{2}", Request.Scheme, Request.Host, fileName);
+        FileInfo file = new FileInfo(Path.Combine(rootFolder, fileName));
+        if (file.Exists)
+        {
+            file.Delete();
+            file = new FileInfo(Path.Combine(rootFolder, fileName));
+        }
+        await Task.Yield();
+
+        using (ExcelPackage package = new ExcelPackage(file))
+        {
+            ExcelWorksheet worksheet2 = package.Workbook.Worksheets.Add("joblist");
+            var JobList = job.JobList();
+            worksheet2.Cells[3, 5].LoadFromCollection(JobList, true, TableStyles.Light19);
+            worksheet2.DeleteColumn(2);
+            worksheet2.DeleteColumn(11);
+            worksheet2.DefaultColWidth = 25;
+            worksheet2.Cells.Style.WrapText = true;
+            worksheet2.Cells[1, 5].Value = $"Job List :({JobList.Count})";
+            using (ExcelRange Rng = worksheet2.Cells[1, 5, 1, 7])
+            {
+                Rng.Merge = true;
+                Rng.Style.Font.Bold = true;
+                Rng.Style.Font.Size = 18;
+                Rng.Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
+            }
+            return downloadUrl;
+        }
+    }
+
+----------
+cái reportURL là ri anh nghe
+const reportURL = 'http://192.168.145.99:5001/api';
